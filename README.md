@@ -43,7 +43,7 @@ Insira os tópicos do README em links para facilitar a navegação do leitor
 * * *
 ## 📁 Acesso aos projetos
 
-⚠️ [Ciência de Dados com Inteligência Artificial Visual com Orange Canvas](#C:\projetos\projetos-GIT\Estudo-Ciencia-de-Dados\Orange-Canvas\IA-Visual-2024-com-Sandeco\README.MD)
+⚠️ [Ciência de Dados com Inteligência Artificial Visual com Orange Canvas](https://github.com/LuizPerciliano/Estudo-Ciencia-de-Dados/tree/main/Orange-Canvas/IA-Visual-2024-com-Sandeco)
 
 ✔️ Curso B
 

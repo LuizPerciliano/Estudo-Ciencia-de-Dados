@@ -286,11 +286,13 @@ WIN + SHIFT + S = Permite que o o Windows possa printar uma imagem, que pode ser
 
 0 = masculino - base titanic
 
-## 🧐 Trabalho: Caso de Uso
+## 🧐 Trabalhos / Casos de Uso
 
 [//]: # (Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. )
 
 [//]: # (Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.)
+
+### [Exercício 1.4](https://github.com/LuizPerciliano/Estudo-Ciencia-de-Dados/blob/main/Orange-Canvas/IA-Visual-2024-com-Sandeco/exercicios/1.4-EXERCICIOS.md)
 
 ## Datasets Públicos
 Portal Brasileiro de Dados Abertos- http://dados.gov.br/dataset
