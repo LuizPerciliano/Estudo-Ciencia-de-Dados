@@ -1,9 +1,7 @@
 <h1>Ciência de Dados com Inteligência Artificial Visual com Orange Canvas</h1> 
 
-<p align="center">
-  <img src=https://img.shields.io/static/v1?label=IA&message=Inteligência%20Artificial&color=blue&style=for-the-badge&logo=AI/>
-  <img src=https://img.shields.io/static/v1?label=ChatGPT&message=Inteligência%20Artificial&color=blue&style=for-the-badge&logo=AI/>
-</p>
+![Descrição adicional opcional](https://img.shields.io/badge/-OrangeCanvas-A6A6A0?logo=ORANGE&style=plastic)
+
 
 > Status: ⚠️ (em desenvolvimento)
 
