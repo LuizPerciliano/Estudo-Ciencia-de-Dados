@@ -2,7 +2,7 @@
 *.pdf
 
 # Ignorar arquivos de imagem comuns
-*.png
+#*.png
 *.jpg
 *.jpeg
 *.gif
