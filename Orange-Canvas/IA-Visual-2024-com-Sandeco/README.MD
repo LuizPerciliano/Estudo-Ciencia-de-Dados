@@ -263,7 +263,9 @@ git clone https://github.com/seu-usuario/seu-repositorio-de-data-science.git
   - O reconhecimento facial pode enfrentar desafios, especialmente com múltiplas identidades associadas a uma única pessoa.
 
 ## 📁 Aula 02
-[//]: # (link da aula aqui)
+[//]: # (https://youtu.be/oKtPx9f6MZ4)
+
+
 
 
 ## 📁 Aula 03
@@ -281,6 +283,7 @@ Ao carregar os dados, um gráfico interessante é o de distribuição, para ver 
 
 WIN + SHIFT + S = Permite que o o Windows possa printar uma imagem, que pode ser colada no Chagpt para ele analisar.
 
+Para dados categóricos é interessante usar a moda para "analisar"
 
 0 = masculino - base titanic
 
@@ -291,6 +294,10 @@ WIN + SHIFT + S = Permite que o o Windows possa printar uma imagem, que pode ser
 [//]: # (Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.)
 
 ### [Exercício 1.4](https://github.com/LuizPerciliano/Estudo-Ciencia-de-Dados/blob/main/Orange-Canvas/IA-Visual-2024-com-Sandeco/exercicios/1.4-EXERCICIOS.md)
+
+Vídeo com a resolução do Exercício
+
+[//]: # (https://youtu.be/G3jed9J1v6k)
 
 ## Datasets Públicos
 Portal Brasileiro de Dados Abertos- http://dados.gov.br/dataset
@@ -327,6 +334,8 @@ YFCC100M - https://multimediacommons.wordpress.com/yfcc100m-core-dataset/
 
 ## Referências
 https://orangedatamining.com
+
+https://github.com/sandeco/ORANGE_CANVAS
 
 
 ## 💼 Desenvolvedores / Contribuintes
