@@ -265,11 +265,197 @@ git clone https://github.com/seu-usuario/seu-repositorio-de-data-science.git
 ## 📁 Aula 02
 [//]: # (https://youtu.be/oKtPx9f6MZ4)
 
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=84s)
+
+- [01:24](#) 📊 Introdução ao pré-processamento de dados usando o Orange Canvas.
+
+  - Apresentação do conjunto de dados "Adult Income Dataset" para exemplificar o pré-processamento de dados.
+  - Importância do pré-processamento de dados antes de aplicar técnicas de Inteligência Artificial.
+  - Exemplos de irregularidades comuns em conjuntos de dados.
+
+  O **pré-processamento de dados** é uma etapa crucial antes de aplicar técnicas de Inteligência Artificial (IA), sendo fundamental para o sucesso de projetos nessa área. Essa fase envolve uma série de procedimentos destinados a limpar, organizar e transformar os dados brutos em um formato adequado para análise, garantindo que os algoritmos de IA possam interpretá-los corretamente e extrair insights valiosos. A importância do pré-processamento de dados pode ser destacada em vários aspectos:
+
+1. Melhoria da Qualidade dos Dados
+
+Dados brutos frequentemente contêm erros, valores ausentes, duplicatas ou informações irrelevantes. O pré-processamento permite corrigir esses problemas, melhorando a qualidade dos dados. Dados limpos e de alta qualidade são essenciais para treinar modelos de IA com precisão, pois "lixo entra, lixo sai" (garbage in, garbage out) é um princípio bem conhecido na computação.
+
+2. Normalização e Padronização
+
+Diferentes escalas e formatos podem prejudicar a eficácia dos algoritmos de IA, especialmente aqueles baseados em distâncias, como k-means ou kNN, e algoritmos de otimização gradientes, como redes neurais. O pré-processamento inclui a normalização (ajuste da escala dos dados para um intervalo comum) e a padronização (ajuste da distribuição dos dados para ter média 0 e desvio padrão 1), facilitando a convergência mais rápida dos algoritmos durante o treinamento.
+
+3. Redução de Dimensionalidade
+
+Datasets com um grande número de variáveis (alta dimensionalidade) podem tornar os modelos de IA ineficientes e propensos ao overfitting, onde o modelo aprende o ruído nos dados de treinamento em vez de generalizar a partir deles. Técnicas de redução de dimensionalidade, como Análise de Componentes Principais (PCA), são usadas no pré-processamento para identificar e remover informações redundantes ou irrelevantes, simplificando o modelo sem perder insights valiosos.
+
+4. Engenharia de Recursos
+
+A transformação e criação de novos recursos (feature engineering) é uma parte vital do pré-processamento, permitindo a incorporação de conhecimento do domínio nos dados. Isso pode significar a transformação de variáveis temporais em características mais úteis, como dia da semana ou parte do dia, ou a combinação de várias variáveis em uma nova que ofereça uma visão mais profunda para o modelo de IA.
+
+5. Balanceamento de Dados
+
+Em muitos problemas de classificação, alguns rótulos podem ser muito mais frequentes do que outros, levando a modelos de IA que têm um desempenho pobre nas classes menos representadas. Técnicas de pré-processamento, como oversampling, undersampling ou a geração de dados sintéticos (SMOTE), podem ajudar a equilibrar o dataset, melhorando a capacidade do modelo de aprender sobre todas as classes.
+
+Conclusão
+
+O pré-processamento de dados é, portanto, uma etapa indispensável no pipeline de IA, diretamente ligado à eficácia e eficiência dos modelos resultantes. Investir tempo e recursos no pré-processamento não apenas melhora a qualidade dos insights obtidos, mas também pode significar economia de recursos computacionais e tempo, ao facilitar o treinamento e a convergência de modelos complexos de IA.
+
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=430s)
+- [07:10](#) 🛠️ Análise exploratória e tratamento de dados ausentes.
+
+  - Demonstração prática de como identificar e lidar com dados ausentes em um conjunto de dados.
+  - Discussão sobre estratégias de imputação de dados ausentes, como imputação pela média, mediana ou moda.
+  - Explanação sobre a importância de tratar dados ausentes para evitar distorções nos resultados da análise.
+
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=637s)
+- [10:37](#) 🧮 Abordagens para imputação de dados e considerações sobre a distribuição dos dados.
+
+  - Analogia da "Copa das Cores" para ilustrar a imputação de dados ausentes.
+  - Discussão sobre a imputação pela média e sua utilidade em dados com distribuição normal.
+  - Exploração de outras abordagens para imputação de dados, incluindo o uso de inteligência artificial para reconhecer padrões e realizar a imputação.
+
+![Copa das Cores - Solução 1](imagens/copacor-s1.png)
+
+A solução 1 não é uma boa.
+
+![Copa das Cores - Solução 2](imagens/copacor-s2.png)
+
+A solução 2 é razoável.
+
+![Copa das Cores - Solução 3](imagens/copacor-s3.png)
+
+A solução 3 é melhor.
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=1033s)
+- [17:13](#) 🛠️ Pré-processamento de dados com o Orange Canvas
+
+  - Explicação sobre como o Orange trata valores ausentes.
+  - Demonstração do widget "preprocess" para imputação de valores ausentes.
+  - Opções de imputação disponíveis: remover, atribuir valor aleatório, média, mediana ou moda.
+
+  Média e mediana podem ser usados para valores numéricos, a moda é para tipo texto.
+  Analisando a moda do workclass
+  ![moda-workclass](imagens/moda-workclass.png)
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=1267s)
+- [21:07](#) 🎯 Importância da mediana na imputação de valores ausentes
+
+  - Discussão sobre a importância da mediana em dados categóricos.
+  - Analogia entre moda matemática e moda no contexto de tendências.
+  - Explanação sobre como a mediana oferece uma métrica mais confiável em relação à média na presença de outliers.
+
+Dados categóricos são um tipo de dado utilizado em estatística e análise de dados para representar características que podem ser divididas em categorias distintas, mas que não têm uma ordem ou magnitude inerente. No entanto, como você mencionou, os dados categóricos podem ser classificados em dois tipos principais: nominais e ordinais, dependendo de se as categorias têm ou não uma ordem ou hierarquia natural.
+
+### Dados Categóricos Nominais
+
+Os dados nominais representam categorias que não possuem uma ordem ou classificação específica. Eles são usados para rotular variáveis sem qualquer tipo de quantificação. Exemplos comuns de dados nominais incluem:
+
+- **Tipos sanguíneos**: A, B, AB, O. Não existe uma ordem hierárquica entre os tipos sanguíneos; eles são simplesmente diferentes categorias.
+- **Cores**: Vermelho, Azul, Verde. Assim como os tipos sanguíneos, as cores são categorias sem uma ordem específica.
+- **Gênero**: Masculino, Feminino, Outros. Estas são categorias para classificar o gênero sem qualquer implicação de ordem.
+- **Nacionalidade**: Brasileiro, Americano, Canadense, etc. As nacionalidades são outro exemplo de dados nominais, onde as categorias simplesmente representam diferentes grupos sem qualquer ordem.
+
+### Dados Categóricos Ordinais
+
+Diferentemente dos dados nominais, os dados ordinais possuem uma ordem ou hierarquia natural entre as categorias. Embora os dados ordinais mostrem uma sequência, a distância exata ou a diferença entre os níveis não é conhecida. Exemplos de dados ordinais incluem:
+
+- **Tamanhos**: Pequeno, Médio, Grande. Essas categorias têm uma ordem natural, onde Grande é maior que Médio, que é maior que Pequeno.
+- **Níveis de educação**: Ensino Fundamental, Ensino Médio, Graduação, Pós-graduação. Aqui, cada categoria representa um nível de educação que segue uma ordem específica de progressão.
+- **Classificações de hotéis**: ★, ★★, ★★★, ★★★★, ★★★★★. As estrelas indicam uma classificação que tem uma ordem clara, com mais estrelas representando uma qualidade superior.
+- **Níveis de satisfação**: Insatisfeito, Neutro, Satisfeito. Essas categorias representam uma escala de satisfação que tem uma ordem lógica de menos para mais satisfeito.
+
+### Importância dos Dados Categóricos
+
+Os dados categóricos são fundamentais em diversas análises estatísticas e modelos de machine learning, pois permitem a classificação e agrupamento de informações de maneira que possamos entender padrões, fazer previsões e tomar decisões baseadas em categorias específicas. No entanto, muitos algoritmos de machine learning requerem que os dados de entrada sejam numéricos, o que significa que os dados categóricos muitas vezes precisam ser transformados por meio de técnicas como codificação one-hot ou codificação de rótulos antes de serem utilizados para treinamento de modelos.
+
+Entender a diferença entre dados nominais e ordinais é crucial para escolher o método de análise e de pré-processamento mais adequado, garantindo que a informação que a ordem das categorias carrega (no caso dos ordinais) seja preservada e utilizada corretamente nas análises.
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=1511s)
+- [25:11](#) 📊 Identificação e tratamento de outliers
+
+  - Definição de outliers como anomalias nos dados.
+  - Ilustração de outliers como dados que se destacam significativamente da maioria.
+  - Abordagem de tratamento de outliers pelo Orange Canvas, incluindo exclusão ou imputação com base na mediana.
+
+![outlier chuck](imagens/outlier-chuck.png)
+
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=2179s)
+- [36:19](#) 🧠 Pré-processamento de dados no Orange Canvas
+
+  - Exploração do pré-processamento de dados com o Orange Canvas.
+  
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=2287s)
+- [38:07](#) 📊 Identificação e tratamento de dados categóricos
+
+  - Discussão sobre o desafio de lidar com dados categóricos em machine learning.
+  - Explanação sobre técnicas de transformação de dados categóricos, como One Hot Encoding.
+
+A presença de uma grande quantidade de dados categóricos em um dataset pode, de fato, apresentar desafios significativos para análises estatísticas e modelos de machine learning. Isso ocorre porque muitos algoritmos são projetados para trabalhar com dados numéricos e podem ter dificuldades em lidar diretamente com variáveis categóricas, especialmente quando estas possuem muitas categorias. Além disso, um número elevado de categorias pode levar a problemas como a dimensionalidade excessiva, que pode, por sua vez, resultar em overfitting (quando o modelo se ajusta demais aos dados de treinamento e tem um desempenho ruim em dados novos) e aumentar a complexidade computacional. Para mitigar esses problemas, é importante considerar estratégias de tratamento e redução da quantidade de categorias categóricas. Aqui estão algumas técnicas e considerações para enriquecer a informação:
+
+### Redução de Categorias
+
+- **Agrupamento de Categorias**: Uma abordagem comum é agrupar categorias semelhantes em categorias mais amplas, reduzindo assim o número total de categorias. Por exemplo, em uma variável categórica que lista cidades, pode-se agrupar cidades pela região geográfica ou tamanho.
+
+- **Remoção de Categorias Raras**: Categorias que aparecem muito raramente nos dados podem ser menos úteis para a análise e podem ser combinadas em uma categoria "Outros" ou simplesmente removidas, dependendo do caso de uso.
+
+### Transformação de Dados Categóricos
+
+- **Codificação**: Antes de aplicar técnicas como PCA (Análise de Componentes Principais), é necessário transformar variáveis categóricas em numéricas. Métodos como a codificação one-hot ou codificação ordinal são comumente utilizados, mas aumentam a dimensionalidade dos dados.
+
+- **Análise de Componentes Principais (PCA) para Dados Categóricos**: Embora o PCA seja tradicionalmente aplicado a dados numéricos, variantes do PCA adaptadas para dados categóricos, como o Multiple Correspondence Analysis (MCA), podem ser utilizadas para reduzir a dimensionalidade de dados categóricos.
+
+### Seleção de Recursos
+
+- **Uso de RANK para Seleção de Recursos**: Técnicas de seleção de recursos, como métodos baseados em RANK, podem ajudar a identificar e manter as variáveis mais relevantes para o modelo. Isso não apenas reduz a complexidade do modelo, mas também pode melhorar o desempenho ao focar nas características mais informativas.
+
+- **Importância de Recursos**: Além de técnicas automáticas, a análise da importância dos recursos oferecida por muitos modelos de machine learning pode fornecer insights sobre quais variáveis categóricas contribuem mais para a previsão, permitindo uma redução focada naquelas de menor importância.
+
+### Considerações Finais
+
+Ao lidar com dados categóricos, é crucial equilibrar a necessidade de preservar informações úteis com a necessidade de simplificar o modelo para evitar problemas como overfitting e alta complexidade computacional. A escolha das técnicas de pré-processamento e redução de dimensionalidade deve ser guiada pelo conhecimento do domínio e pelos objetivos específicos da análise ou modelo de machine learning em questão. Experimentar diferentes abordagens e avaliar seu impacto no desempenho do modelo são etapas essenciais para encontrar o equilíbrio adequado.
+
+
+[//]: # (https://www.youtube.com/watch?v=oKtPx9f6MZ4&t=2897s)
+- [48:17](#) 🛠️ Transformação de dados categóricos com One Hot Encoding
+
+  - Detalhes sobre o uso de One Hot Encoding para transformar dados categóricos em formato adequado para modelos de machine learning.
+  - Explicação do conceito de One Hot Encoding e sua aplicação prática em problemas de análise de dados.
+
+![algoritimos numericos](imagens/algoritmos-numericos.png)
+
+![one-hot-encoding](imagens/one-hot-encoding.png)
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=3400s)
+
+- [56:40](#) 💡 Tratamento de dados categóricos e impacto no desempenho:
+
+  - Trabalhar com muitas categorias pode degradar o desempenho dos modelos.
+  - Ao modelar dados com várias categorias, é essencial considerar a quantidade de informações dentro de cada categoria.
+  - O excesso de categorias pode resultar em ruído nos dados, afetando negativamente a eficácia dos modelos.
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=3571s)
+- [59:31](#) 📊 Utilizando Análise de Componentes Principais (PCA) para redução de dimensão:
+
+  - O PCA é uma técnica útil para reduzir a dimensionalidade dos dados, preservando as características mais importantes.
+  - Ao aplicar o PCA, é possível transformar um grande número de features em um conjunto menor de componentes principais.
+  - A redução de dimensão com PCA facilita a visualização e o processamento dos dados, mantendo as informações mais relevantes.
+
+[//]: # (https://youtu.be/oKtPx9f6MZ4?t=3780s)
+- [01:03:00](#) 🛠️ Utilizando algoritmos de ranking para identificar features mais informativas:
+
+  - Algoritmos de ranking ajudam a identificar quais features são mais informativas para o modelo.
+  - Esses algoritmos classificam as features com base em sua importância para a predição do target.
+  - A seleção das features mais informativas contribui para melhorar a eficácia dos modelos de machine learning.
+
+Término da aula de pré-processamento.
+
+![canva-pre-processamento](imagens/canva-pre-processamento.png)
+
 
 
 
 ## 📁 Aula 03
 [//]: # (link da aula aqui)
+
 
 
 
