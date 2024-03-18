@@ -17,13 +17,13 @@
 
 * [Aula 02](#aula-02)
  
-* [Trabalho: Caso de Uso](#trabalho-caso-de-uso)
+* [Trabalho: Caso de Uso](#trabalho:-Caso-de-Uso)
 
 * [Datasets Públicos](#Datasets-Públicos)
 
 * [Referências](#referências)
 
-* [Desenvolvedores / Contribuintes](#desenvolvedores)
+* [Desenvolvedores / Contribuintes](#desenvolvedores-/-contribuintes)
 
 * * *
 
