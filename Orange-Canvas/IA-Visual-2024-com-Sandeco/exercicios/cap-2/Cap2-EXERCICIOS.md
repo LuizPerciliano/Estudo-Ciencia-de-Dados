@@ -91,7 +91,9 @@ A imagem abaixo nos mostra que a distribuição não é muito diferente em rela�
 
 **Utilize o widget Preprocess para normalizar e padronizar um conjunto de dados. Aplique ambos os métodos separadamente e juntos, observando as mudanças no conjunto de dados resultante. Analise o impacto dessas transformações na preparação dos dados para modelos de aprendizado de máquina.**
 
+Aqui foram aplicados widgets separados, o de normalização, não sei porque, não vi nenhuma mudaça. A discretização One-Hot, de cinco features, foi para 137 conforme imagem abaixo.
 
+![Dados discretizados](image-3.png)
 
 
 ***
@@ -100,6 +102,17 @@ A imagem abaixo nos mostra que a distribuição não é muito diferente em rela�
 
 **Aplique o widget PCA a um conjunto de dados carregado através do widget File. Ajuste o número de componentes principais para capturar uma certa porcentagem da variância explicada. Explore visualmente o impacto da redução de dimensionalidade nos dados e discuta como o PCA pode facilitar a análise e modelagem de dados complexos.**
 
+O exercicio anterior nos deixou com muitas dimensões ou features, agora aplicando o PCA, ele reduz para quantas features quisermos, para que estas representem todas as outras 137, conforme imagem abaixo.
+
+![PCA](image-4.png)
+
+
+***
+
+### Conclusão
+Pré-processamento é fundamental para iniciar com IA, abaixo segue como ficou o fluxo final. Com o aprendizado no final esse fluxo poderia ter ficado melhor e mais organizado, o que será feito nos próximos exercícios.
+
+![Fluxo Final](image-5.png)
 
 ***
 [↩️ Curso](https://github.com/LuizPerciliano/Estudo-Ciencia-de-Dados/tree/main/Orange-Canvas/IA-Visual-2024-com-Sandeco)
